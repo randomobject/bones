@@ -57,6 +57,8 @@ function bones_ahoy() {
   add_filter( 'the_content', 'bones_filter_ptags_on_images' );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
+  //custom excerpt length
+  add_filter('excerpt_length', 'bones_excerpt_length');
 
 } /* end bones ahoy */
 
